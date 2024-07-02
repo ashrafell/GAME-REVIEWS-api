@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="games">
+        <div class="backG"></div>
+
+        <nav
+            class="navbar  fixed-top rounded-4 navbar-expand-lg nav-bg position-sticky m-auto mt-5 top-0 z-3 col-md-6 col-lg-9">
+            <div class="container">
+                <h5 class="navbar-brand mb-0 text-uppercase">
+                    <img src="img/logo-sm.png" alt="logo photo" style="max-width: 40px"> Game Reviews
+                </h5>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse small navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu small">
+                        <li class="nav-item">
+                            <a role="button" class="nav-link  text-uppercase" aria-current="page"
+                                data-category="mmorpg">mmorpg</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-category="shooter">shooter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-category="sailing">sailing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-category="permadeath">permadeath</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-category="superhero">superhero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-category="pixel">pixel</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="main mt-5">
+                <div class="row" id="display">
+                    <span class="loader m-auto my-5"></span>
+                </div>
+            </div>
+
+    </section>
+
+
+    <section class="Details-Game">
+        <div class="overLayer top-0 bottom-0 start-0 end-0 position-fixed " id="myOverLayer">
+            <div class="container mt-3 position-relative">
+                <i class="fa-solid fa-xmark text-white fs-4 position-absolute end-0 top-0" id="closeIcon"></i>
+                <h2 class="text-white mb-4">Details Game</h2>
+                <div class="row g-3">
+                    <div class="col-4">
+                        <img src="img/post-2.jpg" class="w-100" alt="" id="overLayerImg">
+                    </div>
+                    <div class="col-8 ">
+                        <h3 class="text-white ">Title: <span class=" rounded-2 text-white" id="myTitle">DC Universe
+                                Online</span></h3>
+                        <h3 class="text-white fs-5">Category: <span class="bg-info rounded-2 text-black fs-6 p-1"
+                                id="myCategory">mmorpg</span></h3>
+                        <h3 class="text-white fs-5">Platform: <span class="bg-info rounded-2 text-black fs-6 p-1"
+                                id="myPlatform">windows</span></h3>
+                        <h3 class="text-white fs-5">Status: <span class="bg-info rounded-2 text-black fs-6 p-1"
+                                id="myStatus">Live</span></h3>
+                        <p class="text-white mt-3" id="myParagraph">DC Universe Online (DCUO) is a free-to-play, comics
+                            based
+                            MMORPG developed by Daybreak Game Company (formerly Sony Online Entertainment.) Start your
+                            adventure by creating your very own superhero or villain, complete with various superpowers,
+                            and then team up with iconic DC Comic characters like Batman, The Joker, and others to
+                            complete your “training” as a new resident of this hero infested world. While DCUO sports
+                            many traditional MMORPG systems, the game also has a more unique interface specifically
+                            designed for an MMO that spans both PC and console platforms, and one that lends itself very
+                            well to controller play. PvE content is explored primarily through the use of story
+                            episodes, raids, Duo instances, and Iconic Battles. Following the game’s DLC story
+                            additions, DCUO allows players to fly, sprint, and brawl their way through memorable
+                            locations such as Gotham City, Metropolis, and others all while assisting well known DC
+                            Universe characters throughout the DLC story. DCUO is a free-to-play title, but additional
+                            DLC does come at a cost for those that do not opt for the monthly subscription fee. These
+                            additional content items (episodes) can be purchased individually as can additional
+                            character slots and other in-game items. On the PvP side of content, DCUO provides two
+                            primary PvP options: Arenas and Legends. Matches come in the 1v1, 2v2, 4v4, 5v5, and 8v8
+                            variety. Legends PvP allows players to assume the role of pre-balanced iconic DC characters
+                            regardless of the player’s actual character level or faction affiliation. This mode is a
+                            nice way for players to farm PvP currency without having to wait until they level but some
+                            heroes and villains are locked and require either a cash purchase or unlocking with PvP
+                            currency. Arenas are the more standard PvP option allowing players to take their individual
+                            characters into the fray. Open world PvP is available provided that the player has entered a
+                            PvP server. DCUO is available on PC and the Playstation 4 and Playstation 3 gaming consoles.
+                        </p>
+                        <button class="btn btn-outline-warning">Show Game</button>
+                        <h4 id="idNum"></h4>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <script src="js/ui.js">
+    </script>
+</body>
+
+</html>

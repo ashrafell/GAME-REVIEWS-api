@@ -1,0 +1,186 @@
+body {
+    background-color: #272B30;
+    background-image: url(../img/wraper.png);
+}
+
+
+
+.games {
+    background-color: #272B30;
+    height: 200vh;
+
+
+
+    .backG {
+        background-image: url(../img/wraper.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 150px;
+    }
+
+
+
+
+
+    .navbar {
+        background-color: #3A497B;
+        box-shadow: 0px 0px 28px -1px rgba(0, 0, 0, 0.75);
+        margin-top: 0 !important;
+
+
+        h5 {
+            font-family: "Nerko One", cursive;
+            color: white;
+        }
+
+        a {
+            color: white;
+            transition: all .4s;
+        }
+
+        a:hover {
+            color: #0394C7;
+        }
+
+
+
+    }
+
+
+
+
+    .main {
+
+
+
+        .card {
+            transition: all 1s;
+
+            background-color: #272B30;
+
+            h4 {
+                color: white;
+                font-size: 15px;
+                margin-bottom: 0;
+                font-family: "Nerko One", cursive;
+            }
+
+            h5 {
+
+                color: white;
+                font-size: 13px;
+                font-weight: 700;
+                margin-bottom: 0;
+
+            }
+        }
+
+        .card:hover {
+            scale: 1.1;
+
+        }
+
+
+        .card-body {
+            padding-top: 0px;
+
+            p {
+                color: #919395;
+                font-size: 13px;
+                font-family: "Nerko One", cursive;
+            }
+        }
+
+        .card-footer {
+            span {
+                color: white;
+                background-color: #32383E;
+                font-size: 11px;
+                padding-left: 5px;
+                padding-right: 5px;
+                font-weight: 700;
+            }
+        }
+
+    }
+
+}
+
+
+
+.overLayer {
+    background-color: #272B30;
+    z-index: 999;
+
+
+    h2 {
+        font-family: "Nerko One", cursive;
+    }
+
+    h3 {
+        font-family: "Nerko One", cursive;
+    }
+
+    span {
+        font-family: "Nerko One", cursive;
+
+    }
+
+
+    p {
+        font-size: 14px;
+        font-family: "Nerko One", cursive;
+
+    }
+
+
+    .fa-solid {
+        cursor: pointer;
+    }
+
+
+    h4 {
+        font-size: 20px;
+        color: white;
+    }
+}
+
+
+
+
+
+.loader {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+
+}
+
+.loader::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border-bottom: 4px solid #FF3D00;
+    border-left: 4px solid transparent;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
